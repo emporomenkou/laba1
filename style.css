@@ -4,13 +4,32 @@
     scroll-behavior: smooth;
     font-family: "Inter", sans-serif;
 }
+.wrapper{
+    max-width: 1440px;    
+}
 
-.flex{
+h1, h2, h3, h4{
+    font-family: "Fraunces", serif;
+}
+
+.header-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    margin: 0px 0px 9px 146px;
+    height: 74px;
     align-items: center;
 }
 
-.head-font{
-    font-family: 'Fraunces', serif;
+.header-links a{
+    margin: 6.5px 17px 5.5px 17px;
+    align-items: start;
+
+    font-size: 15px;
+}
+.header-links{
+    margin-right: auto;     
+}
+.header-logo{
+    height: 36px;
+    width: 107px;
 }
