@@ -3,6 +3,9 @@
     padding: 0;
     scroll-behavior: smooth;
     font-family: "Inter", sans-serif;
+    font-weight: 400;
+    background-color: none;
+    font-size: 15px;
 }
 .wrapper{
     max-width: 1440px;    
@@ -12,24 +15,256 @@ h1, h2, h3, h4{
     font-family: "Fraunces", serif;
 }
 
+h1{
+    font-size: 58px;
+    font-weight: 400;
+    margin-bottom: 24px ;
+}
+
+h2{
+    font-size: 42px;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+h4{
+    font-size: 21px;
+}
+
+h5{
+    font-size: 24px;
+}
+
+a{
+    text-decoration: none;
+    color: #33383F;
+}
+
+.container{
+    max-width: 1130px;
+    margin: 0 auto;
+}
+
+/* Header*/
+
 .header-container{
     display: flex;
-    justify-content: start;
-    margin: 0px 0px 9px 146px;
-    height: 74px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 19px;
+}
+
+.header-left{
+    display: flex;
     align-items: center;
 }
 
 .header-links a{
-    margin: 6.5px 17px 5.5px 17px;
-    align-items: start;
-
-    font-size: 15px;
+    margin-right: 24px;
 }
+
 .header-links{
     margin-right: auto;     
 }
+
 .header-logo{
-    height: 36px;
-    width: 107px;
+    margin-right: 36px;
+}
+
+.white-button{
+    color: #0070A0;
+    border: none;
+    cursor: pointer;
+}
+
+.blue-button{
+    color: #FFFFFF;
+    background-color: #004866;
+    border: none;
+    font-size: 15px;
+    padding: 6px 20px;
+    cursor: pointer;
+}
+
+header .white-button{
+    margin-right: 32px;
+}
+
+/*!header*/
+
+/*main*/
+
+.description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 58px;    
+}
+
+.description-left{
+    width: 525px;
+}
+
+.description-text{
+    width: 380px;
+    font-size: 20px;
+    margin-bottom: 32px;
+}
+
+.description-buttons .white-button{
+    margin-left: 24px;
+}
+
+.description-buttons::after{
+    content: url(assets/blue_arrow.svg);
+    display: block;
+}
+
+.description-buttons{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.trusted{
+margin: 130px auto 160px auto;
+}
+
+.trusted-images{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 61px;
+}
+
+.trusted-text{
+    margin: 0 auto 24px auto;
+    width: fit-content;
+}
+
+.advantages{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto 120px auto;
+}
+
+.advantage-card{
+    padding: 32px 32px 40px 32px;
+}
+
+.yellow-bg{
+    background-color: #FAEA73;
+}
+
+.blue-bg{
+    background-color: #CCEFF6;
+    margin: 0 32px 0 32px;
+}
+
+.red-bg{
+    background-color: #F7CEDC;
+}
+
+.advantage-card-h3{
+    margin: 13px 0;
+}
+
+.features-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 34px 32px 80px 137px;
+}
+ .accordion{
+    max-width: 485px;
+    width: 100%;
+    flex-shrink: 0;
+ }
+
+ .features{
+    margin: 0 auto 120px auto;
+    background-color: #f7f9fa;
+    max-width: 1230px;
+ }
+
+ .features-head{
+    width: 630px;
+    letter-spacing: 0.2px;
+    margin-bottom: 0;
+    padding-top: 79px;
+    margin-left: 155px
+ }
+
+
+.accordion-item{
+    border-bottom: 1px solid #dcdad7;
+    border-top: 1px solid #dcdad7;
+    padding: 16px 0;
+}
+
+.visible-accordion{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    list-style: none !important;
+}
+
+
+.visible-accordion-content{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.accordion-arrow{
+    content: url(assets/grey_arrow.svg);
+}
+
+.accordion-content{
+    font-size: 16px;
+    width: 363px;
+    margin: 18px 0 0 50px;
+}
+
+.about-head{
+    width: auto;
+    line-height: 50px;
+    max-width: 280px;
+}
+
+.about{
+    display: flex;
+    align-items: start;
+    gap: 98px;
+    margin-bottom: 120px;
+}
+
+.about-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-right: 32px;
+}
+
+.about-cards h3{
+    margin: 15px 0 13px 0;
+}
+
+.about-card{
+    flex: 1;
+}
+
+.targets{
+    background-color: #0070A0;
+}
+
+.targets-container{
+    margin: auto 80px
 }

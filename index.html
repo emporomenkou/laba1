@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="darkreader-lock">
     <title>Whirl</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,66 +14,61 @@
 
 
     <header>
-        <div class="header-container">
-            <div class="header-logo">
-                <a href="/">
-                    <img src="assets/whirllogo.svg" alt="whirl logo">                 
-                </a>
-
+        <div class="header-container container">
+            <div class="header-left">
+                <div class="header-logo">
+                    <a href="/">
+                        <img src="assets/whirllogo.svg" alt="whirl logo">                 
+                    </a>
+                </div>
+                <nav class="header-links">
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Integrations</a>
+                    <a href="#">Learn</a>
+                </nav>
             </div>
-            <nav class="header-links header-flex">
-                <a href="#">Features</a>
-                <a href="#">Pricing</a>
-                <a href="#">Integrations</a>
-                <a href="#">Learn</a>
-            </nav>
             <div class="header-buttons">
                 <button class="white-button">Sign in</button>
                 <button class="blue-button">Book a demo</button>  
             </div>
-          
         </div>
     </header>
 
 
 
     <main>
-        <section class="description">
-            <div class="container">
-                <div>
+        <section class="description container">
+                <div class="description-left">
                     <h1>Your everyday
                         tasks, automated.</h1>
-                    <p class="basic-text description-text">
+                    <p class="description-text">
                         Whirl lets you design and streamline
                         your everyday tasks and workflows
                         in just a few clicks.</p>
-                    <div>
+                    <div class="description-buttons">
                         <button class="blue-button">Book a demo</button>
                         <button class="white-button">Learn more</button>                    
                     </div>
                 </div>
                 <img src="assets/doskokvadr.jpg" alt="doska s kvadratami">
-            </div>
         </section>
 
-        <section class="trusted">
-            <div class="container">
-                <p class="basic-text trusted-text">Trusted by 50,000+ companies</p>
+        <section class="trusted container">
+                <h5 class="trusted-text">Trusted by 50,000+ companies</h5>
                 <div class="trusted-images">
                     <img src="assets/focusfox.svg" alt="focusfox">
                     <img src="assets/nowintech.svg" alt="NowInTech">
                     <img src="assets/optimer.svg" alt="Optimer">
                     <img src="assets/carded.svg" alt="Carded">
                 </div>
-            </div>
         </section>
 
-        <section class="advantages">
-            <div class="container">
+        <section class="advantages container">
                 <div class="yellow-bg advantage-card">
                     <img src="assets/black_molnia.svg" alt="black molnia">
-                    <h3>Fast. Really fast.</h3>                    
-                    <p >
+                    <h3 class="advantage-card-h3">Fast. Really fast.</h3>                    
+                    <p class="advantage-card-text">
                         Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut
                         aliquip ex ea commodo consequat.
@@ -80,8 +76,8 @@
                 </div>
                 <div class="blue-bg advantage-card">
                     <img src="assets/kupyra.svg" alt="kupyra">
-                    <h3>More bang for buck.</h3>                    
-                    <p >
+                    <h3 class="advantage-card-h3">More bang for buck.</h3>                    
+                    <p class="advantage-card-text">
                         Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut
                         aliquip ex ea commodo consequat.
@@ -89,8 +85,8 @@
                 </div>
                 <div class="red-bg advantage-card">
                     <img src="assets/ok.svg" alt="ok">
-                    <h3>Safe and secure.</h3>                    
-                    <p >
+                    <h3 class="advantage-card-h3">Safe and secure.</h3>                    
+                    <p class="advantage-card-text">
                         Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut
                         aliquip ex ea commodo consequat.
@@ -99,21 +95,20 @@
             </div>
         </section>
 
-        <section class="features">
-            <div class="container">
-                <div class="features-head">
-                    <h2>
-                        We will take care of everything,
-                        so you can get back to relaxing.
-                    </h2>
-                </div>
+        <section class="features container">
+            <h2 class="features-head">
+                We will take care of everything,
+                so you can get back to relaxing.
+            </h2>
+            <div class="features-bottom">
                 <div class="accordion">
                     <details class="accordion-item">
-                        <summary>
-                            <div class="visible-accordion">
+                        <summary class="visible-accordion">
+                            <div class="visible-accordion-content">
                                 <img src="assets/knopka.svg" alt="knopka">
                                 <h4>Anti-loss technology</h4>
                             </div>
+
                             <span class="accordion-arrow"></span>
                         </summary>
                         <div class="accordion-content">
@@ -122,8 +117,8 @@
                             incididunt ut labore et dolore magna aliqua.</div>
                     </details>
                     <details class="accordion-item">
-                        <summary>
-                            <div class="visible-accordion">
+                        <summary class="visible-accordion">
+                            <div class="visible-accordion-content">
                                 <img src="assets/smile.svg" alt="smile">
                                 <h4>Exchange easily</h4>
                             </div>
@@ -132,11 +127,12 @@
                         <div class="accordion-content">
                             Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.</div>
+                            incididunt ut labore et dolore magna aliqua.
+                        </div>
                     </details>
                     <details class="accordion-item">
-                        <summary>
-                            <div class="visible-accordion">
+                        <summary class="visible-accordion">
+                            <div class="visible-accordion-content">
                                 <img src="assets/papka.svg" alt="papka">
                                 <h4>Fully encrypted</h4>
                             </div>
@@ -148,80 +144,73 @@
                             incididunt ut labore et dolore magna aliqua.</div>
                     </details>
                     <details class="accordion-item">
-                        <summary>
-                            <div class="visible-accordion">
+                        <summary class="visible-accordion">
+                            <div class="visible-accordion-content">
                                 <img src="assets/blue_molnia.svg" alt="blue molnia">
                                 <h4>Plenty of options</h4>
                             </div>
-                            <span class="accordion-arrow"></span>
+                            <span class="accordion-arrow"></span> 
                         </summary>
-                        <div class="accordion-content">Lorem ipsum dolor sit amet, consectetur
+                        <div class="accordion-content">
+                            Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.</div>
+                            incididunt ut labore et dolore magna aliqua.
+                        </div>
                     </details>
                 </div>
+                <img src="assets/computer.jpg" alt="computer">   
+            </div>
+            </div>
+        </section>
 
-                <div>
-                    <img src="assets/computer.jpg" alt="computer">
+        <section class="about container">
+            <h2 class="about-head">
+                What's Whirl
+                all about?
+            </h2>
+            <div class="about-cards">
+                <div class="about-card">
+                    <h3>All on one place</h3>
+                    <div class="card-content">
+                        <p>
+                            Ut enim ad minim veniam,
+                            quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <img src="assets/lupa.svg" alt="lupa">
+                    <h3>Get daily alerts.</h3>
+                    <div class="card-content">
+                        <p>
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit,
+                            sed do eiusmod tempor
+                            incididunt ut labore.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-card">
+                    <img src="assets/minicomputer.svg" alt="minicomputer">                        
+                    <h3>Safe and secure.</h3>
+                    <div class="card-content">
+                        <p>
+                            Ut enim ad minim veniam,
+                            quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="about">
-            <div class="container about-cards">
-                <h2>
-                    What's Whirl
-                    all about?
-                </h2>
-
-                <div>
-                    <div class="about-card">
-                        <h3>All on one place</h3>
-                        <div class="card-content">
-                            <p>
-                                Ut enim ad minim veniam,
-                                quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip
-                                ex ea commodo consequat
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="about-card">
-                        <img src="assets/lupa.svg" alt="lupa">
-                        <h3>Get daily alerts.</h3>
-                        <div class="card-content">
-                            <p>
-                                Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit,
-                                sed do eiusmod tempor
-                                incididunt ut labore.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="about-card">
-                        <img src="assets/minicomputer.svg" alt="minicomputer">                        
-                        <h3>Safe and secure.</h3>
-                        <div class="card-content">
-                            <p>
-                                Ut enim ad minim veniam,
-                                quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip
-                                ex ea commodo consequat.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
         <section class="targets">
-            <div class="container">
+            <div class="targets-container container">
                 <img src="assets/lampographic.jpg" alt="lampographic">
                 <div class="targets-content">
                     <h2 class="targets-head">Set, forget, and then track.</h2>
@@ -381,7 +370,7 @@
                 </div>
             </div>
             <div class="footer-links">
-                <h5>Info</h5>
+                <h6>Info</h6>
                 <a href="#">Features</a>
                 <a href="#">Pricing</a>
                 <a href="#">Blog</a>
@@ -390,7 +379,7 @@
                 <a href="#">Privacy Policy</a>                
             </div>
             <div class="footer-links">
-                <h5>Admin</h5>
+                <h6>Admin</h6>
                 <a href="#">Style Guide</a>
                 <a href="#">Licenses</a>
                 <a href="#">Instructions</a>
@@ -399,7 +388,7 @@
                 <a href="#">404</a>                
             </div>
             <div class="newsletter">
-                <h5>Newsletter</h5>
+                <h6>Newsletter</h6>
                 <p>
                     Sign up for the latest
                     news, company insights,
