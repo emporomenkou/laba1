@@ -6,6 +6,7 @@
     font-weight: 400;
     background-color: none;
     font-size: 15px;
+    letter-spacing: 0.2px;
 }
 .wrapper{
     max-width: 1440px;    
@@ -77,6 +78,7 @@ a{
 
 .white-button{
     color: #0070A0;
+    background-color: #FFFFFF;
     border: none;
     cursor: pointer;
 }
@@ -86,7 +88,7 @@ a{
     background-color: #004866;
     border: none;
     font-size: 15px;
-    padding: 6px 20px;
+    padding: 8px 32px;
     cursor: pointer;
 }
 
@@ -244,6 +246,7 @@ margin: 130px auto 160px auto;
     align-items: start;
     gap: 98px;
     margin-bottom: 120px;
+    max-width: 1230px;
 }
 
 .about-cards{
@@ -251,6 +254,7 @@ margin: 130px auto 160px auto;
     justify-content: space-between;
     align-items: flex-end;
     margin-right: 32px;
+    max-width: 732px;
 }
 
 .about-cards h3{
@@ -262,9 +266,83 @@ margin: 130px auto 160px auto;
 }
 
 .targets{
+    display: flex;
     background-color: #0070A0;
+    height: 550px;
+    justify-content: center;
 }
 
 .targets-container{
-    margin: auto 80px
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.targets-content{
+    color: #FFFFFF;
+    max-width: 501px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.targets-container img{
+    margin-right: 187px;
+}
+
+.targets-text{
+    font-size: 18px;
+    line-height: 27px;
+    margin: 21px 20px 17px 0;
+    font-weight: 300;
+}
+
+.targets-tag::before{
+    content: url(assets/galochka.svg);
+    margin-bottom: 11px;    
+}
+
+.targets-tags{
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.targets-tag{
+    margin-bottom: 11px;
+}
+
+.targets-content .blue-button{
+    background-color: #0070A0;
+}
+
+.tasks{
+    margin: 105px 120px;
+    max-width: 1230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tasks-top-text{
+    font-size: 18px;
+}
+
+.tasks-head{
+    margin-bottom: 18px;
+}
+
+.tasks-top{
+    max-width: 650px;
+    margin-bottom: 68px;
+}
+
+.tasks-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tasks-item{
+    margin-right: 64px;
 }
