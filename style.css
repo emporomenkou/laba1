@@ -7,10 +7,9 @@
     background-color: none;
     font-size: 15px;
     letter-spacing: 0.2px;
+    cursor: default;
 }
-.wrapper{
-    max-width: 1440px;    
-}
+
 
 h1, h2, h3, h4{
     font-family: "Fraunces", serif;
@@ -18,18 +17,15 @@ h1, h2, h3, h4{
 
 h1{
     font-size: 58px;
-    font-weight: 400;
     margin-bottom: 24px ;
 }
 
 h2{
     font-size: 42px;
-    font-weight: 400;
 }
 
 h3{
     font-size: 25px;
-    font-weight: 500;
 }
 
 h4{
@@ -43,6 +39,11 @@ h5{
 a{
     text-decoration: none;
     color: #33383F;
+    cursor: pointer;
+}
+
+a img{
+    cursor: pointer;
 }
 
 .container{
@@ -85,13 +86,16 @@ a{
 
 .blue-button{
     color: #FFFFFF;
-    background-color: #004866;
+    background-color: #0070A0;
     border: none;
     font-size: 15px;
     padding: 8px 32px;
     cursor: pointer;
 }
 
+.blue-button:hover{
+    background-color: blue;
+}
 header .white-button{
     margin-right: 32px;
 }
@@ -312,10 +316,6 @@ margin: 130px auto 160px auto;
     margin-bottom: 11px;
 }
 
-.targets-content .blue-button{
-    background-color: #0070A0;
-}
-
 .tasks{
     margin: 105px 120px;
     max-width: 1230px;
@@ -339,10 +339,282 @@ margin: 130px auto 160px auto;
 
 .tasks-items{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    margin: 0 auto 0 0;
+    width: 100%;;
 }
 
 .tasks-item{
-    margin-right: 64px;
+    max-width: 235px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 16px;
+}
+
+.tasks-item-head{
+    margin: 8px auto 11px 0.5px;
+}
+
+.tasks-item img{
+    width: 55px;
+    height: 55px
+}
+
+.smarter{
+    background-color: #f7f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 747px;
+}
+
+.smarter .white-button{
+    background-color: #f7f9fa;
+}
+
+.smarter-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.smarter-container{
+    max-width: 1230px;
+}
+
+.smarter-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.smarter-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #FFFFFF;
+    margin-right: 32px;
+    max-width: 355px;
+}
+
+.smarter-card-content{
+    margin: 25px 24px 28px 24px;    
+}
+
+.smarter-card-remark{
+    display: inline-block;
+    background-color: #E6F7FF;
+    color: #2C90C9;
+    padding: 2px 12px 4px 12px;
+    margin-bottom: 8px;
+}
+
+.smarter-card-text{
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.smarter-card-head{
+    margin-bottom: 11px;
+}
+
+.smarter-card-date{
+    font-size: 12px;
+}
+
+.started{
+    max-width: 1230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.started-container{
+    padding: 64px 0 48px 64px;    
+    background-color: #E6F7FF;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.started-head{
+    margin-bottom: 18px;
+}
+
+.started-content{
+    max-width: 503px;
+}
+
+.started-text{
+    font-size: 18px;
+    margin-bottom: 33px;
+    max-width: 481px;
+    margin-right: 22px;
+}
+
+.started-tag::before{
+    content: url(assets/galochka2.svg);
+    margin-bottom: 11px;    
+}
+
+.started-tag{
+    margin-right: 32px;
+}
+
+.started-tags{
+    list-style: none;
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.started-content .blue-button{
+    margin-bottom: 12px;
+}
+
+.started-tag-text{
+    font-size: 13px;
+    color: #626A72;
+}
+
+/*!main*/
+
+/*footer*/
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.footer-container{
+    margin-top: 85px;
+    border: 1.5px solid;
+    max-width: 1230px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 50px;
+    border-bottom: 1px solid;
+    border-color: #DEE5EB;
+    margin: 0 50px;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-bottom-text a{
+    color: -webkit-link;
+}
+
+.footer-logo a{
+    color: -webkit-link;
+    margin-bottom: 20px;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 290px 110px 0;
+}
+
+.footer-logo img{
+    width: 135px;
+    height: 47px;
+}
+
+.footer-links a{
+    font-size: 13px;
+    color: #626a72;
+    margin-bottom: 10px;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 217px;
+}
+
+.footer-links-head{
+    margin-bottom: 16px;
+}
+
+.footer-top-right{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo-text{
+    width: 160px;
+    font-size: 14px;
+}
+
+.newsletter-text{
+    width: 200px;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.newsletter-input-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 217px;    
+    border-bottom: 1px solid #C2CDD8;
+    padding-bottom: 8px;
+}
+
+.newsletter-input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent; 
+    font-size: 13px;
+    margin-left: 15px;
+}
+
+.newsletter-input::placeholder {
+    color: #626A72;
+}
+
+.newsletter-button{
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.newsletter-button img {
+  display: block;
+  width: auto;
+  height: 28px;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 51px;
+    width: 1130px;
+}
+
+.footer-bottom-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 106px;
 }

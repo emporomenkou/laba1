@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="darkreader-lock">
+    <meta name="darkreader-lock" content="true">
     <title>Whirl</title>
+    <link rel="icon" href="assets/onlylogo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,20 +13,19 @@
 </head>
 <body>
 
-
-    <header>
+    <header id="header">
         <div class="header-container container">
             <div class="header-left">
                 <div class="header-logo">
                     <a href="/">
-                        <img src="assets/whirllogo.svg" alt="whirl logo">                 
+                        <img src="assets/whirllogo.svg" alt="whirl">                 
                     </a>
                 </div>
                 <nav class="header-links">
-                    <a href="#">Features</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Integrations</a>
-                    <a href="#">Learn</a>
+                    <a href="#features">Features</a>
+                    <a href="#started">Pricing</a>
+                    <a href="#trusted">Integrations</a>
+                    <a href="#tasks">Learn</a>
                 </nav>
             </div>
             <div class="header-buttons">
@@ -38,7 +38,7 @@
 
 
     <main>
-        <section class="description container">
+        <section class="description container" id="description">
                 <div class="description-left">
                     <h1>Your everyday
                         tasks, automated.</h1>
@@ -54,7 +54,7 @@
                 <img src="assets/doskokvadr.jpg" alt="doska s kvadratami">
         </section>
 
-        <section class="trusted container">
+        <section class="trusted container" id="trusted">
                 <h5 class="trusted-text">Trusted by 50,000+ companies</h5>
                 <div class="trusted-images">
                     <img src="assets/focusfox.svg" alt="focusfox">
@@ -64,7 +64,7 @@
                 </div>
         </section>
 
-        <section class="advantages container">
+        <section class="advantages container" id="advantages">
                 <div class="yellow-bg advantage-card">
                     <img src="assets/black_molnia.svg" alt="black molnia">
                     <h3 class="advantage-card-h3">Fast. Really fast.</h3>                    
@@ -92,10 +92,9 @@
                         aliquip ex ea commodo consequat.
                     </p>
                 </div>                
-            </div>
         </section>
 
-        <section class="features container">
+        <section class="features container" id="features">
             <h2 class="features-head">
                 We will take care of everything,
                 so you can get back to relaxing.
@@ -104,10 +103,10 @@
                 <div class="accordion">
                     <details class="accordion-item">
                         <summary class="visible-accordion">
-                            <div class="visible-accordion-content">
+                            <span class="visible-accordion-content">
                                 <img src="assets/knopka.svg" alt="knopka">
                                 <h4>Anti-loss technology</h4>
-                            </div>
+                            </span>
 
                             <span class="accordion-arrow"></span>
                         </summary>
@@ -118,10 +117,10 @@
                     </details>
                     <details class="accordion-item">
                         <summary class="visible-accordion">
-                            <div class="visible-accordion-content">
+                            <span class="visible-accordion-content">
                                 <img src="assets/smile.svg" alt="smile">
                                 <h4>Exchange easily</h4>
-                            </div>
+                            </span>
                             <span class="accordion-arrow"></span>
                         </summary>
                         <div class="accordion-content">
@@ -132,10 +131,10 @@
                     </details>
                     <details class="accordion-item">
                         <summary class="visible-accordion">
-                            <div class="visible-accordion-content">
+                            <span class="visible-accordion-content">
                                 <img src="assets/papka.svg" alt="papka">
                                 <h4>Fully encrypted</h4>
-                            </div>
+                            </span>
                             <span class="accordion-arrow"></span>
                         </summary>
                         <div class="accordion-content">
@@ -145,10 +144,10 @@
                     </details>
                     <details class="accordion-item">
                         <summary class="visible-accordion">
-                            <div class="visible-accordion-content">
+                            <span class="visible-accordion-content">
                                 <img src="assets/blue_molnia.svg" alt="blue molnia">
                                 <h4>Plenty of options</h4>
-                            </div>
+                            </span>
                             <span class="accordion-arrow"></span> 
                         </summary>
                         <div class="accordion-content">
@@ -160,10 +159,9 @@
                 </div>
                 <img src="assets/computer.jpg" alt="computer">   
             </div>
-            </div>
         </section>
 
-        <section class="about container">
+        <section class="about container" id="about">
             <h2 class="about-head">
                 What's Whirl
                 all about?
@@ -209,7 +207,7 @@
             </div>
         </section>
 
-        <section class="targets">
+        <section class="targets" id="targets">
             <div class="targets-container container">
                 <img src="assets/lampographic.jpg" alt="lampographic">
                 <div class="targets-content">
@@ -236,7 +234,7 @@
             </div>
         </section>
 
-        <section class="tasks container">
+        <section class="tasks container" id="tasks">
             <div class="tasks-top">
                 <h2 class="tasks-head">Your tasks, automated.</h2>
                 <p class="tasks-top-text">
@@ -244,162 +242,193 @@
                     tempor incididunt ut labore et dolore magna aliqua.
                 </p>
             </div>
-        <div class="tasks-items">
-            <div class="tasks-item">
-                <img src="assets/share.svg" alt="share">
-                <h3>Learn your options.</h3>
-                <p>
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit,
-                    sed do eiusmod tempor.
-                </p>
+            <div class="tasks-items container">
+                <div class="tasks-item">
+                    <img src="assets/share.svg" alt="share">
+                    <h3 class="tasks-item-head">Learn your options.</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit,
+                        sed do eiusmod tempor.
+                    </p>
+                </div>
+                <div class="tasks-item">
+                    <img class="tasks-blue-molnia" src="assets/blue_molnia.svg" alt="share">
+                    <h3 class="tasks-item-head">Stay informed.</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt
+                        ut labore et doloretro.
+                    </p>
+                </div>
+                <div class="tasks-item">
+                    <img src="assets/klass.svg" alt="share">
+                    <h3 class="tasks-item-head">Automate it all.</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit,
+                        sed do eiusmod tempor ipsum.
+                    </p>
+                </div>                
+                <div class="tasks-item">
+                    <img src="assets/voskl_znaki.svg" alt="share">
+                    <h3 class="tasks-item-head">Stay informed.</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit,
+                        sed do eiusmod incididunt ut
+                        labore et consectetur.
+                    </p>
+                </div>   
             </div>
-            <div class="tasks-item">
-                <img src="assets/blue_molnia.svg" alt="share">
-                <h3>Stay informed.</h3>
-                <p>
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit, sed
-                    do eiusmod tempor ipsum.
-                </p>
-            </div>
-            <div class="tasks-item">
-                <img src="assets/klass.svg" alt="share">
-                <h3>Automate it all.</h3>
-                <p>
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit,
-                    sed do eiusmod tempor.
-                </p>
-            </div>                
-            <div class="tasks-item">
-                <img src="assets/voskl_znaki.svg" alt="share">
-                <h3>Stay informed.</h3>
-                <p>
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit,
-                    sed do eiusmod incididunt ut
-                    labore et consectetur.
-                </p>
-            </div>   
         </section>
 
-        <section class="smarter">
-            <div class="container">
-                <h2>Get smarter, with our blog.</h2>
-                <div class="smarter-cards">
+        <section class="smarter" id="smarter">
+            <div class="smarter-container">
+                <div class=" smarter-top container">
+                    <h2>Get smarter, with our blog.</h2>
+                    <button class="white-button">See All Posts</button>                
+                </div>
+                <div class="smarter-cards container">
                     <div class="smarter-card">
                         <img src="assets/smartfon.jpg" alt="smatfon">
-                        <span>Improvements</span>
-                        <h3>Automating Daily Tasks from Your Phone</h3>
-                        <p>
-                            Dicta nihil ratione corrupti. Aut dolorem
-                            dolores omnis laboriosam ratione sequi.
-                            Provident ad sed velit. Est ea ab.
-                        </p>
-                        <time datetime="2022-04-24" class="card-date">April 24, 2022</time>
+                        <div class="smarter-card-content">
+                            <span class="smarter-card-remark">Improvements</span>
+                            <h3 class="smarter-card-head">Automating Daily Tasks from Your Phone</h3>
+                            <p class="smarter-card-text">
+                                Dicta nihil ratione corrupti. Aut dolorem
+                                dolores omnis laboriosam ratione sequi.
+                                Provident ad sed velit. Est ea ab.
+                            </p>
+                            <time datetime="2022-04-24" class="smarter-card-date">April 24, 2022</time>
+                        </div>
                     </div>
                     <div class="smarter-card">
                         <img src="assets/nout.jpg" alt="nout">
-                        <span>Tips & Tricks</span>
-                        <h3>Can You Automate Group Learning?</h3>
-                        <p>
-                            Dicta nihil ratione corrupti. Aut dolorem
-                            dolores omnis laboriosam ratione sequi.
-                            Provident ad sed velit. Est ea ab.
-                        </p>
-                        <time datetime="2022-04-24" class="card-date">April 24, 2022</time>
+                        <div class="smarter-card-content">
+                            <span class="smarter-card-remark">Tips & Tricks</span>
+                            <h3 class="smarter-card-head">Can You Automate Group Learning?</h3>
+                            <p class="smarter-card-text">
+                                Dicta nihil ratione corrupti. Aut dolorem
+                                dolores omnis laboriosam ratione sequi.
+                                Provident ad sed velit. Est ea ab.
+                            </p>
+                            <time datetime="2022-04-24" class="smarter-card-date">April 24, 2022</time>
+                        </div>
+
                     </div>
                     <div class="smarter-card">
-                        <img src="assets/handshake.jpg" alt="handshake">
-                        <span>News</span>
-                        <h3>Our $3,000,000 B Round Investors</h3>
-                        <p>
-                            Eos ipsum et est quis neque cum. Quis
-                            autem est eligendi amet animi eaque. Itaque
-                            minus illo delectus vel vitae dolores minus.
-                        </p>
-                        <time datetime="2022-04-24" class="card-date">April 24, 2022</time>
+                        <img src="assets/handshake.jpg" alt="handshake">                        
+                        <div class="smarter-card-content">
+                            <span class="smarter-card-remark">News</span>
+                            <h3 class="smarter-card-head">Our $3,000,000 B Round Investors</h3>
+                            <p class="smarter-card-text">
+                                Eos ipsum et est quis neque cum. Quis
+                                autem est eligendi amet animi eaque. Itaque
+                                minus illo delectus vel vitae dolores minus.
+                            </p>
+                            <time datetime="2022-04-24" class="smarter-card-date">April 24, 2022</time>
+                        </div>
                     </div>                    
                 </div>
             </div>
+
         </section>
 
-        <section class="started">
-            <div class="container">
-                <h2>Get started with Whirl</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt.
-                </p>
-                <button class="blue-button">Book a demo</button>
-                <ul class="started-tags">
-                    <li>
-                        <img src="assets/galochka2.svg" alt="galochka2">
-                        <span>Free 30-day trial</span>
-                    </li>
-                    <li>
-                        <img src="assets/galochka2.svg" alt="galochka2">
-                        <span>No credit-card required</span>
-                    </li>
-                </ul>
+        <section class="started" id="started">
+            <div class="started-container container">
+                <div class="started-content">
+                    <h2 class="started-head">Get started with Whirl</h2>
+                    <p class="started-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt.
+                    </p>
+                    <button class="blue-button">Book a demo</button>
+                    <ul class="started-tags">
+                        <li class="started-tag">
+                            <span class="started-tag-text">Free 30-day trial</span>
+                        </li>
+                        <li class="started-tag">
+                            <span class="started-tag-text">No credit-card required</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
 
-     
-    <footer>
-        <div class="container">
-            <div>
+    
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-top">
                 <div class="footer-logo">
-                    <a href="/">
+                    <a class="logo-link" href="/">
                         <img src="assets/whirllogo.svg" alt="whirl logo">
                     </a>
-
+                    <div class="footer-logo-text">
+                        <p>
+                            Built by <a href="#">Nikolai Bain</a>.
+                        </p>
+                        <p>
+                            Powered by <a href="#">Webflow</a>.
+                        </p>                        
+                    </div>
                 </div>
-                <div>
-                    <p>
-                        Built by <a href="#">Nikolai Bain</a>.
-                    </p>
-                    <p>
-                        Powered by <a href="#">Webflow</a>.
-                    </p>
+                <div class="footer-top-right">
+                    <div class="footer-links">
+                        <h6 class="footer-links-head">Info</h6>
+                        <a href="#">Features</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Support</a>
+                        <a href="#">Terms & Conditions</a>
+                        <a href="#">Privacy Policy</a>                
+                    </div>
+                    <div class="footer-links">
+                        <h6 class="footer-links-head">Admin</h6>
+                        <a href="#">Style Guide</a>
+                        <a href="#">Licenses</a>
+                        <a href="#">Instructions</a>
+                        <a href="#">Changelog</a>
+                        <a href="#">Password</a>
+                        <a href="#">404</a>                
+                    </div>
+                    <div class="newsletter">
+                        <h6 class="footer-links-head">Newsletter</h6>
+                        <p class="newsletter-text">
+                            Sign up for the latest
+                            news, company insights,
+                            and Whirl updates.
+                        </p>
+                        <form class="newsletter-form" action="Sending">
+                            <div class="newsletter-input-group">
+                                <input type="email" class="newsletter-input" placeholder="Your email" required>
+                                <button type="submit" class="newsletter-button">
+                                    <img src="assets/email_button.svg" alt="Submit">
+                                </button>
+                            </div>
+                        </form>                   
+                    </div>
                 </div>
             </div>
-            <div class="footer-links">
-                <h6>Info</h6>
-                <a href="#">Features</a>
-                <a href="#">Pricing</a>
-                <a href="#">Blog</a>
-                <a href="#">Support</a>
-                <a href="#">Terms & Conditions</a>
-                <a href="#">Privacy Policy</a>                
-            </div>
-            <div class="footer-links">
-                <h6>Admin</h6>
-                <a href="#">Style Guide</a>
-                <a href="#">Licenses</a>
-                <a href="#">Instructions</a>
-                <a href="#">Changelog</a>
-                <a href="#">Password</a>
-                <a href="#">404</a>                
-            </div>
-            <div class="newsletter">
-                <h6>Newsletter</h6>
-                <p>
-                    Sign up for the latest
-                    news, company insights,
-                    and Whirl updates.
+            <div class="footer-bottom">
+                <p class="footer-bottom-text">
+                    © 2022 Whirl. All Rights Reserved. Illustrations by
+                    <a href="">Streamline</a>
                 </p>
-                <form class="subscribe-form" action="Sending">
-                        <div class="input-group">
-                            <input type="email" class="subscribe-input" placeholder="Your email" required>
-                            <button type="submit" class="subscribe-button">
-                                <img src="assets/email_button.svg" alt="Submit">
-                            </button>
-                        </div>
-                </form>
-            </div>                   
+                <div class="footer-bottom-links">
+                    <a href="https://x.com/" target="_blank">
+                        <img src="assets/x.svg" alt="x.com">
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank">
+                        <img src="assets/linkedin.svg" alt="linkedin.com">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="assets/facebook.svg" alt="facebook.com">
+                    </a>                    
+                </div>
+            </div>
         </div>
     </footer>
 </body>
