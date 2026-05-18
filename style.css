@@ -229,6 +229,11 @@ margin: 130px auto 160px auto;
     gap: 16px;
 }
 
+.visible-accordion-content-title{
+    font-family: "Fraunces", serif;
+    font-size: 21px;
+}
+
 .accordion-arrow{
     content: url(assets/grey_arrow.svg);
 }
